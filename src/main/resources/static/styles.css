@@ -1,0 +1,23 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24/05/2023, 08:47:04 PM
+    Author     : jason
+*/
+
+.registro{
+    color:blue
+}
+a:hover{
+    color:white;
+    background-color:black;
+    font-size:25px;
+    transition:0.9s;
+    
+}
+a:active{
+    color:crimson;
+    background-color:yellow;
+}
