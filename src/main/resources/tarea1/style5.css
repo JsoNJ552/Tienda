@@ -1,0 +1,145 @@
+
+
+.*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imagen1{
+     display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    
+}
+
+.albums{
+     display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    
+}
+
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0px;
+}
+.header{
+    background-color: black;
+    height: 12%;
+    position:fixed;
+    top:0;
+    left:0;
+    
+    width :100%;
+    
+    
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin:0 auto;
+}
+.nav-link{
+    color:white;
+    text-decoration: none;
+}
+
+.outfit1{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    
+    
+    
+}
+.outfit1 img{
+    transition: transform 0.5s;
+}
+.outfit1 img:hover{
+    transform:rotateY(180deg);
+}
+
+
+
+
+
+
+
+.logo{
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    list-style: none;
+    padding: 
+    
+}
+
+
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+
+
+.nav-menu-item{
+    font-size: 16px;
+    margin:0 40px;
+    line-height: 80px;
+    width:max-content;
+}
+.nav-menu-link{
+    padding: 8px 12px;
+    border-Radius:8px;
+    
+}
+.nav-menu-link:Hover{
+    
+     del
+    transition: 0.3s;
+}
+
+.coleccion{
+    position: absolute;
+    top:20px;
+    left:20px;
+    color:white;
+    
+}
+.coleccion-link{
+    padding: 8px 12px;
+    border-Radius:8px;
+}
+
+
+.artistas{
+    list-style-type: none;
+  padding-left: 20px;
+}
+.artistas:before{
+   background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.disco1{
+    width:50%;
+}
+
+.disco2{
+    width:50%;
+}
+
+.disco3{
+    width:50%;
+}
