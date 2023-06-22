@@ -8,9 +8,9 @@ import com.Tienda.Tienda.domain.Categoria;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
- *
+ *Z
  * @author jason
  */
-public interface CategoriaDao extends JpaRepository<Categoria, Long> {
+public interface CategoriaDao extends JpaRepository<Categoria,Long> {
     
 }

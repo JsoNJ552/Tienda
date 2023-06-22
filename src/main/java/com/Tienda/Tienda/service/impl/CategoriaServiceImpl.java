@@ -28,11 +28,27 @@ public class CategoriaServiceImpl implements CategoriaService{
     public List<Categoria> getCategorias(boolean activos) {
         List<Categoria> lista =  categoriaDao.findAll();
         if(activos){
-            lista.removeIf(x -> x.isActivo());
+            lista.removeIf(x -> !x.isActivo());
         }
        return lista;
     }
    
-    
+    @Override
+    @Transactional(readOnly = true)
+    public Categoria getCategoria(Categoria categoria) {
+        return categoriaDao.findById(categoria.getIdCategoria()).orElse(null);
+    }
+
+    @Override
+    @Transactional
+    public void save(Categoria categoria) {
+        categoriaDao.save(categoria);
+    }
+
+    @Override
+    @Transactional
+    public void delete(Categoria categoria) {
+        categoriaDao.delete(categoria);
+    }
     
 }
