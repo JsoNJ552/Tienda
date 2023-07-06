@@ -6,7 +6,7 @@ package com.Tienda.Tienda.controller;
 
 import com.Tienda.Tienda.domain.Categoria;
 import com.Tienda.Tienda.service.CategoriaService;
-import com.Tienda.Tienda.service.FirebaseStorageServiceImpl;
+import com.Tienda.Tienda.service.impl.FirebaseStorageServiceImpl;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

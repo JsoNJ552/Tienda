@@ -6,6 +6,7 @@ package com.Tienda.Tienda.domain;
 //usar nada mas de vez en cuando, porq si no se hace muy pesada en el compilado
 import jakarta.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import lombok.Data;
 //seria permite transformar objetos complejos, poder enviar un pdf a una base de datos
 
@@ -21,15 +22,20 @@ public class Categoria implements Serializable {
     //version de serializacion
     
     
-    @Id
+  
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="id_categoria")
     private static final long serialVersionUID = 1L;
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Id
+    @Column(name="id_categoria")
     private Long idCategoria;//se transforma en id_categoria
     private String descripcion;
     private String rutaImagen;
     private boolean activo;
+    
+    @OneToMany
+    @JoinColumn(name="id_categoria")
+    private List<Producto>productos;
 
     public Categoria() {
     }
