@@ -23,7 +23,10 @@ public interface CategoriaService{
     // Se actualiza un categoria si el id del categoria NO esta vacío
     public void save(Categoria categoria);
     
+    
     // Se elimina el categoria que tiene el id pasado por parámetro
     public void delete(Categoria categoria);
+    
+    public List<Categoria>getPorDescripcion(String descripcion);
     
 }

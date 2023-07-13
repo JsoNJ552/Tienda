@@ -21,7 +21,7 @@ public class CategoriaServiceImpl implements CategoriaService{
 
     @Autowired
     private CategoriaDao categoriaDao ;
-    
+  
     
     @Override
     @Transactional(readOnly=true)
@@ -50,6 +50,13 @@ public class CategoriaServiceImpl implements CategoriaService{
     public void delete(Categoria categoria) {
         categoriaDao.delete(categoria);
      
+    }
+
+    @Override
+    public List<Categoria> getPorDescripcion(String descripcion) {
+        
+        return categoriaDao.findByDescripcion(descripcion);
+  
     }
     
     

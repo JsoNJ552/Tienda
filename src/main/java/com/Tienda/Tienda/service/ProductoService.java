@@ -25,5 +25,7 @@ public interface ProductoService{
     
     // Se elimina el categoria que tiene el id pasado por parámetro
     public void delete(Producto categoria);
+    public List<Producto> findByPrecioBetweenOrderByDescripcion(double precioInf, double precioSup);
+
     
 }

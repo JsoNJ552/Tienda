@@ -63,7 +63,7 @@ public class ProductoController {
                     firebaseStorageService.cargaImagen(
                             imagenFile, 
                             "producto", 
-                            producto.g));
+                            producto.getIdProducto()));
         }
         productoService.save(producto);
         return "redirect:/producto/listado";
@@ -83,5 +83,10 @@ public class ProductoController {
         model.addAttribute("categorias", categorias);
         return "/producto/modifica";
     }
+    
+    
+    
+    
+    
     
 }

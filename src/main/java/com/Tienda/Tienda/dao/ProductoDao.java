@@ -6,6 +6,7 @@ package com.Tienda.Tienda.dao;
 
 import com.Tienda.Tienda.domain.Categoria;
 import com.Tienda.Tienda.domain.Producto;
+import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -13,5 +14,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @author jason
  */
 public interface ProductoDao extends JpaRepository<Producto,Long> {
-    
+    public List<Producto> findByPrecioBetweenOrderByDescripcion(double precioInf, double precioSup);
 }
