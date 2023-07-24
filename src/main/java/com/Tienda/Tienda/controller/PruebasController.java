@@ -52,6 +52,7 @@ public class PruebasController {
     
     
     
+    
     //Los métodos siguientes son para la prueba de consultas ampliadas
     @GetMapping("/listado2")
     public String listado2(Model model) {
@@ -67,7 +68,7 @@ public class PruebasController {
         model.addAttribute("productos", productos);
         model.addAttribute("precioInf", precioInf);
         model.addAttribute("precioSup", precioSup);
-        return "/consulta/listado";
+        return "/pruebas/listado2";
     }
     
     
