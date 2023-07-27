@@ -28,7 +28,7 @@ public class Categoria implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Id
     @Column(name="id_categoria")
-    private Long idCategoria;//se transforma en id_categoria
+    private Long idCategoria;
     private String descripcion;
     private String rutaImagen;
     private boolean activo;
