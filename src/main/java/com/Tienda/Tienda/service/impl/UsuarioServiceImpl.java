@@ -77,5 +77,5 @@ public class UserServiceImpl implements UserService {
     public void delete(User usuario) {
         usuarioDao.delete(usuario);
     }
-}
+
 }

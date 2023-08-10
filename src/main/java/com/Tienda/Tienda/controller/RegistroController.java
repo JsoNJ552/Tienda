@@ -35,7 +35,7 @@ public class RegistroController {
         return "/registro/nuevo";
     }
 
-    @GetMapping("/recordar")
+    @GetMapping("/recordar/")
     public String recordar(Model model, User usuario) {
         return "/registro/recordar";
     }
